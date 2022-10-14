@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ids_peak_dotnet">
+      <HintPath>ids_peak_dotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="ids_peak_ipl_dotnet">
+      <HintPath>ids_peak_ipl_dotnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
