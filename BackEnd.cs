@@ -172,7 +172,7 @@ namespace simple_live_wpf
                 if (!deviceManager.Devices().Any())
                 {
                     Debug.WriteLine("--- [BackEnd] Error: No device found");
-                    MessageBoxTrigger(this, "Error", "No device found");
+                    MessageBoxTrigger(this, "Error in Backend", "No device found");
                     return false;
                 }
 
