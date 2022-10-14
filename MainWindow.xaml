@@ -26,6 +26,5 @@
         </TextBlock>
         <Button x:Name="Start" Grid.Row="2" Grid.Column="0" Margin="2,2,2,2" Click="Start_Click">Start</Button>
         <Button x:Name="Abort" Grid.Row="2" Grid.Column="1" Margin="2,2,2,2" Click="Abort_Click">Abort &amp; Stop</Button>
-        <Button x:Name="Kill" Grid.Row="2" Grid.Column="2" Margin="2,2,2,2" Click="Kill_Click">Kill &amp; Stop</Button>
     </Grid>
 </Window>

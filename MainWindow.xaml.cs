@@ -154,10 +154,5 @@ namespace simple_live_wpf
         {
             backEnd.Abort();
         }
-
-        private void Kill_Click(object sender, RoutedEventArgs e)
-        {
-            backEnd.Kill();
-        }
     }
 }
