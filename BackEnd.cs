@@ -108,7 +108,7 @@ namespace simple_live_wpf
             return true;
         }
 
-        public void Abort()
+        private void Abort()
         {
             try
             {
@@ -122,10 +122,9 @@ namespace simple_live_wpf
                 MessageBoxTrigger(this, "Error in Backend", "Failed to abort acquisition: \n" + e.Message);
             }
 
-            Stop();
         }
 
-        public void Kill()
+        private void Kill()
         {
             try
             {
@@ -138,11 +137,14 @@ namespace simple_live_wpf
                 MessageBoxTrigger(this, "Error in Backend", "Failed to kill acquisition: \n" + e.Message);
             }
 
-            Stop();
         }
 
-        private void Stop()
+        public void Stop()
         {
+
+            Abort();
+            Kill();
+
             Debug.WriteLine("--- [BackEnd] Stop");
             isActive = false;
             //acquisitionWorker.Stop();

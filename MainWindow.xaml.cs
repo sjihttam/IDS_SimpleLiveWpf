@@ -152,7 +152,7 @@ namespace simple_live_wpf
 
         private void Abort_Click(object sender, RoutedEventArgs e)
         {
-            backEnd.Abort();
+            backEnd.Stop();
         }
     }
 }
