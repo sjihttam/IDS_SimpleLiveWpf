@@ -128,7 +128,7 @@ namespace simple_live_wpf
         {
             try
             {
-                Debug.WriteLine($"--- [{Thread.CurrentThread.ManagedThreadId}: BackEnd] KillWait");
+                Debug.WriteLine($"--- [{Thread.CurrentThread.ManagedThreadId}: BackEnd] Kill and Wait");
                 dataStream.KillWait();
             }
             catch (Exception e)
